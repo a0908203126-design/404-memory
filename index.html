@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eeeae2">
+  <title>404 — 留下你的痕跡</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+</head >
+<body>
+  <header class="masthead">
+    <div class="masthead-top">
+      <span class="edition">記憶採集計畫　／　MEMORY ARCHIVE</span>
+      <span class="issue">NO. 404 — 2026</span>
+    </div>
+    <a class="wordmark" href="#" aria-label="404 首頁">404</a>
+    <div class="masthead-bottom">
+      <span>那些消失的名字，是否還有人記得？</span>
+      <span class="english">A PLACE FOR THE MOMENTS WE KEEP.</span>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="intro" aria-label="網站介紹">
+      <p class="intro-kicker">PLEASE LEAVE A TRACE</p>
+      <p class="intro-copy">有些瞬間很普通，卻值得被留下。<br>拍下一張照片，替它寫一句話。</p>
+    </section>
+
+    <section class="memory-section" aria-label="觀眾留下的照片">
+      <div class="section-heading">
+        <span>記憶收藏</span>
+        <span class="section-note">YOUR MOMENTS, YOUR WORDS</span>
+      </div>
+      <div id="emptyState" class="empty-state">
+        <span class="empty-mark">＿</span>
+        <p>按下右下角的相機，留下一些痕跡。</p>
+      </div>
+      <div id="photoWall" class="photo-wall" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>404：消失的名字</span>
+    <span>EVERY MEMORY DESERVES A PLACE.</span>
+  </footer>
+
+  <button id="cameraButton" class="camera-button" type="button" aria-label="拍攝或選擇照片">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 7.5h3l1.4-2h7.2l1.4 2h3v11H4z"></path>
+      <circle cx="12" cy="13" r="3.5"></circle>
+    </svg>
+    <span>留下照片</span>
+  </button>
+  <input id="photoInput" type="file" accept="image/*" capture="environment" hidden>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
